@@ -9,7 +9,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
-                sh 'chmod 644 ./flakey-deploy.sh ./health-check.sh'
+                sh 'chmod 555 ./flakey-deploy.sh ./health-check.sh'
             }
         }
 
