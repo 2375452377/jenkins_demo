@@ -1,8 +1,5 @@
 pipeline {
     agent { docker 'python:3.5.1' }
-    triggers{
-        pollSCM('*/5 * * * *')
-    }
     stages {
         stage('build') {
             steps {
